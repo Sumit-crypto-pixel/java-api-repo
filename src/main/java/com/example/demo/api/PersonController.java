@@ -21,7 +21,6 @@ public class PersonController {
     public void addPerson( @RequestBody Person person){  // because we are sending request
         personService.addPerson(person);
     }
-
     @GetMapping
     public List<Person> getAllPeople(){
         return personService.getAllPeople();
